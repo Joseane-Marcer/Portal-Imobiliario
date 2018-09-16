@@ -1,0 +1,2 @@
+INSERT INTO clientes(usuarioNivel, nome, email, senha) values('admin', 'administrador', 'admin', '202cb962ac59075b964b07152d234b70')
+INSERT INTO clientes(usuarioNivel, nome, email, senha) values('cliente', 'Paulo', 'cliente', '202cb962ac59075b964b07152d234b70')

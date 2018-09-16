@@ -146,6 +146,8 @@ try{
 		 $editBairro            = $resAtivos['imovelBairro'];
 		 $editProximo           = $resAtivos['imovelProximo'];
 		 $editFacilidades       = $resAtivos['imovelFacilidades'];
+                 
+                 $anuncioFinal = $resAtivos['imovelTermino'];
 		
 		$dataHoje = mktime(0,0,0,date('m'),date('d'),date('Y'));
 		$dataFim = mktime(0,0,0,date('m',strtotime($anuncioFinal)),date('d',strtotime($anuncioFinal)),                   date('Y',strtotime($anuncioFinal)));

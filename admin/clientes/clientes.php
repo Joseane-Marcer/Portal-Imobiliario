@@ -37,11 +37,12 @@
 		  echo 'Erro ao seleciona os clientes!';	
 		}
 		
+                $i=0;
 		foreach($res_queryPegaCliente as $resCliente){
 			$clienteId    = $resCliente['clienteId'];
 			$clienteNome  = $resCliente['nome'];
 			$clienteemail = $resCliente['email'];
-            $i++;
+                    $i++;
 		if($i % 2 == 0){
 			$cor = 'style="background:#E6FFF2"';
 		}else{

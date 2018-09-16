@@ -246,7 +246,7 @@ body{background:#383939;}
 #single .single_left .btn:hover{color:#fff; background:#069;}
 
 #single .single_right{width:400px; float:right; padding:5px;}
-#single .single_right h4{font:18px "Trebuchet MS", Arial, Helvetica, sans-serif; color:#999; font-variant:small-caps:}
+#single .single_right h4{font:18px "Trebuchet MS", Arial, Helvetica, sans-serif; color:#999; font-variant:small-caps;}
 
 #single .info{font:14px "Trebuchet MS", Arial, Helvetica, sans-serif; color:#930; padding:5px; float:left; width:390px; background:#f4f4f4;}
 #single .info strong{color:#333;}

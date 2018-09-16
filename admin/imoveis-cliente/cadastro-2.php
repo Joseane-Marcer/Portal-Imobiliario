@@ -22,10 +22,10 @@ $imovelComods = strip_tags(trim($_POST['comodos']));
 $imovelSuites = strip_tags(trim($_POST['suites']));
 $imovelBanheiros = strip_tags(trim($_POST['banheiros']));
 $imovelSalas = strip_tags(trim($_POST['salas']));
-$imovelChurrasqueira = strip_tags(trim($_POST['churrasqueira']));
-$imovelGaragem = strip_tags(trim($_POST['garagem']));
-$imovelServico = strip_tags(trim($_POST['servico']));
-$imovelPiscina = strip_tags(trim($_POST['piscina']));
+$imovelChurrasqueira =  isset($_POST['churrasqueira']) ? strip_tags(trim($_POST['churrasqueira'])) : null;
+$imovelGaragem =  isset($_POST['garagem']) ? strip_tags(trim($_POST['garagem'])) : null;
+$imovelServico = isset($_POST['servico']) ?  strip_tags(trim($_POST['servico'])) : null;
+$imovelPiscina = isset($_POST['piscina']) ? strip_tags(trim($_POST['piscina'])) : null;
 $imovelFacilidades = strip_tags(trim($_POST['facilidades']));
 
 $imovelVisitas = '1';

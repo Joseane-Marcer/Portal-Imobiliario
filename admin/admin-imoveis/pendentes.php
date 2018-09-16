@@ -40,6 +40,7 @@
         echo 'Erro ao pegar ativos';
 	 }
 	 
+         $i = 0;
 	 foreach($resultado_pegaAtivos as $resAtivos){
 		 $anuncioCliente = $resAtivos['clienteId'];
 		 $anuncioId = $resAtivos['imovelId'];

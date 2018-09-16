@@ -45,8 +45,8 @@ if (isset($_GET['accesscheck'])) {
 
 if (isset($_POST['usuario'])) {
   $loginUsername=$_POST['usuario'];
-  //$password=md5($_POST['senha']);
-  $password=($_POST['senha']);
+  $password=md5($_POST['senha']);
+  //$password=($_POST['senha']);
  	//echo "Usuário = ".$loginUsername." e senha = ".$password;
   $MM_fldUserAuthorization = "usuarioNivel";
   $MM_redirectLoginSuccess = "admin/painel.php";
@@ -86,7 +86,7 @@ if (isset($_POST['usuario'])) {
 <!doctype html>
 <html>
 <head>
-<?php include"Connections/config.php";?>
+<?php include"Connections/config.php"; ?>
 <?php include"js/scripts.php"; ?>
 <?php include"funcoes.php";?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

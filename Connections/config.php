@@ -1,22 +1,12 @@
 <?php
-/*define('HOST','localhost');
+if(!defined('HOST'))
+define('HOST','localhost');
+if(!defined('DB'))
 define('DB','meuimovel');
+if(!defined('USER'))
 define('USER','root');
-define('PASS','');*/
-
-if(!defined("HOST")){
-  define('HOST','localhost');
-}
-if(!defined("DB")){
-  define('DB','meuimovel');
-}
-if(!defined("USER")){
-  define('USER','root');
-}
-if(!defined("PASS")){
-  define('PASS','');
-}
-
+if(!defined('PASS'))
+define('PASS','');
 $conexao = 'mysql:host='.HOST.';dbname='.DB;
 try{
 	$conecta = new PDO($conexao,USER,PASS);

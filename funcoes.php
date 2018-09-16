@@ -1,7 +1,7 @@
 <?php function homePosts(){
 	
 	include"Connections/config.php";
-		
+	
 	$dataVal = date('Y-m-d H:m:s');
 	$sql = 'SELECT * FROM imoveis WHERE imovelTermino >= :dataVal ORDER BY imovelId DESC LIMIT 4';
 	try{

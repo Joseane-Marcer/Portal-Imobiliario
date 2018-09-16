@@ -45,8 +45,7 @@ if (isset($_GET['accesscheck'])) {
 
 if (isset($_POST['email'])) {
   $loginUsername=$_POST['email'];
-  //$password=md5($_POST['senha']);
-  $password=($_POST['senha']);
+  $password=md5($_POST['senha']);
   $MM_fldUserAuthorization = "usuarioNivel";
   $MM_redirectLoginSuccess = "painel.php";
   $MM_redirectLoginFailed = "erro.php";
